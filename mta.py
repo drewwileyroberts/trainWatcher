@@ -3,15 +3,15 @@ from google.transit import gtfs_realtime_pb2
 from datetime import datetime
 from typing import Optional
 
-# 86th St - Central Park West
-STOP_ID = "A24"
+# 86th St - Central Park West (B/C, A late nights)
+STOP_ID = "A20"
 
 FEEDS = {
     "ACE": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-ace",
     "BDFM": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/nyct%2Fgtfs-bdfm",
 }
 
-# Routes that stop at 86th St CPW
+# Routes that stop at 86th St CPW (A only late nights when running local)
 RELEVANT_ROUTES = {"A", "B", "C"}
 
 
